@@ -1,4 +1,4 @@
-package com.example.cheatsheet;
+package com.example.space;
 
 import org.junit.Test;
 

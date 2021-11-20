@@ -4,27 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".MainActivity">
+    android:gravity="center_horizontal"
+    tools:context=".SecondActivity">
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/elementsList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/titleApp"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/colorTitleTextApp"
-        android:layout_marginTop="@dimen/sizeTitle"
-        android:textSize="@dimen/sizeTextTitle" />
+        android:layout_marginTop="@dimen/sizeTitleActivity2"
+        android:textSize="@dimen/sizeTextTitleActivity2"
+        android:textStyle="bold" />
 
-    <ListView
-        android:id="@+id/countriesList"
-        android:layout_marginTop="@dimen/distanceToTitle"
-        android:layout_below="@+id/textView2"
+    <WebView
+        android:id="@+id/webBrowser"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:layout_below="@+id/elementsList"
+        android:layout_marginTop="@dimen/distanceToTitleActivity2"
         />
+
 
 </RelativeLayout>
